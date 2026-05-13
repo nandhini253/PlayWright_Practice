@@ -1,0 +1,28 @@
+{
+  "name": "playwright_e2e_test",
+  "version": "1.0.0",
+  "description": "playwright E2E testing  with AI",
+  "keywords": [
+    "playwright",
+    "playwright-e2e-test"
+  ],
+  "license": "ISC",
+  "author": "Automation",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "demo": "npx playwright test tests/demo/mytest.spec.ts --headed",
+    "test-2": "npx playwright test tests/page-objects/test-2.spec.ts --headed"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.6.0",
+    "allure": "^3.4.0",
+    "allure-playwright": "^3.7.1"
+  },
+  "dependencies": {
+    "csv-parse": "^6.2.1",
+    "express": "^5.2.1",
+    "xlsx": "^0.18.5"
+  }
+}
